@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111827"
+    tools:context=".MenuPage">
+
+    <ImageButton
+        android:id="@+id/buttonBackHome"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#6B7280"
+        android:contentDescription="Back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:textColor="#fff"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.262" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="316dp"
+        android:layout_height="518dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.673"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.661">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/chickennoodles"
+                    tools:layout_editor_absoluteX="47dp"
+                    tools:layout_editor_absoluteY="122dp" />
+
+                <TextView
+                    android:id="@+id/noodles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chicken Noodles"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="173dp"
+                    tools:layout_editor_absoluteY="60dp" />
+
+                <TextView
+                    android:id="@+id/price1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="£10"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="226dp"
+                    tools:layout_editor_absoluteY="102dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/greennoodles"
+                    tools:layout_editor_absoluteX="47dp"
+                    tools:layout_editor_absoluteY="309dp" />
+
+                <TextView
+                    android:id="@+id/noodles1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Green Pepper Noodles"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="173dp"
+                    tools:layout_editor_absoluteY="60dp" />
+
+                <TextView
+                    android:id="@+id/price2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="£9.95"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="226dp"
+                    tools:layout_editor_absoluteY="102dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/imageButton7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/rednoodles"
+                    tools:layout_editor_absoluteX="47dp"
+                    tools:layout_editor_absoluteY="514dp" />
+
+                <TextView
+                    android:id="@+id/noodlestext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chicken noodles"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="173dp"
+                    tools:layout_editor_absoluteY="60dp" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="£10"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="226dp"
+                    tools:layout_editor_absoluteY="102dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="94dp"
+        android:layout_height="64dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/trolley" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
